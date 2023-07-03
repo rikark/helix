@@ -4,9 +4,9 @@
 <style>
     #canvas-container {
         position: relative;
-        left: -100%;  /* Adjust as needed */
+        left: -50%;  /* Adjust as needed */
         top: -50px;  /* Move the container up by 50 pixels */
-        transform: rotate(40deg) scale(0.5);
+        transform: rotate(45deg) scale(0.5);
     }
 
     body {
@@ -34,7 +34,7 @@
         function init() {
             canvas = canvasEl;
             if (!canvas) return;
-            canvas.width = 4000;
+            canvas.width = 3400;
             canvas.height = 1000;
             ctx = canvas.getContext("2d");
             height = canvas.height;
@@ -53,7 +53,7 @@
 
             drawLines(draw.t);
 
-            draw.seconds = draw.seconds - 0.005;
+            draw.seconds = draw.seconds - 0.002;
             draw.t = draw.seconds * Math.PI;
             requestAnimationFrame(draw);
         };
@@ -113,4 +113,3 @@
     </script>
 </body>
 </html>
-
