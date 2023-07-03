@@ -63,8 +63,8 @@
 
         function drawSine(t, isNegative = false) {
             ctx.globalAlpha = 0.5; // 50% transparency for everything drawn after this line
-            ctx.strokeStyle = "#fff";
-            ctx.fillStyle = "#fff";
+            ctx.strokeStyle = "#ddd";
+            ctx.fillStyle = "#ddd";
             ctx.lineWidth = 3;
             ctx.beginPath();
 
@@ -82,7 +82,7 @@
 
         function drawLines(t) {
             ctx.globalAlpha = 0.5; // 50% transparency for everything drawn after this line
-            ctx.fillStyle = "#fff";
+            ctx.fillStyle = "#ddd";
             for (let i = yAxis; i <= width; i += 140) {
                 ctx.lineWidth = 1;
                 ctx.beginPath();
