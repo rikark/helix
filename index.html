@@ -5,7 +5,7 @@
     #canvas-container {
         position: relative;
         left: -400px;  /* Adjust as needed */
-        top: -500px;  /* Move the container up by 50 pixels */
+        top: -300px;  /* Move the container up by 50 pixels */
         transform: rotate(45deg) scale(0.5);
     }
 
@@ -61,8 +61,8 @@
         draw.t = 1;
 
         function drawSine(t, isNegative = false) {
-            ctx.strokeStyle = "#ddd";
-            ctx.fillStyle = "#fff";
+            ctx.strokeStyle = "#3C4B70";
+            ctx.fillStyle = "#3C4B70";
             ctx.lineWidth = 3;
             ctx.beginPath();
 
@@ -79,7 +79,7 @@
         }
 
         function drawLines(t) {
-            ctx.fillStyle = "#fff";
+            ctx.fillStyle = "#3C4B70";
             for (let i = yAxis; i <= width; i += 140) {
                 ctx.lineWidth = 1;
                 ctx.beginPath();
